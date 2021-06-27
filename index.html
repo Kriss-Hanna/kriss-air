@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Kriss Air</title>
+</head>
+<body>
+
+  <header>
+    <h1>✈️ Kriss Air ✈️</h1>
+    <h3>la tête dans les nuages</h3>
+    <form action="" class="form-search">
+
+      <div class="form-group">
+        <label for="provenance">Ville de départ</label>
+        <input type="text" placeholder="Paris, Milan, Le Caire" id="provenance" name="provenance">
+        
+        <label for="destination">Ville d'arrivée</label>
+        <input type="text" placeholder="Varsovie, New-York" id="destination" name="destination">
+      </div>
+
+      <div class="form-group">
+        <label for="depart">Date de départ</label>
+        <input type="date" placeholder="Départ" id="depart" name="depart">
+
+        <label for="retour">Date de retour</label>
+        <input type="date" placeholder="Départ" id="retour" name="retour">
+      </div>
+
+      <div class="form-group">
+        <label for="adultes">Billets adultes</label>
+        <select name="adultes" id="adultes">
+          <option selected="selected">0 adulte</option>
+          <option>1 adulte</option>
+          <option >2 adultes</option>
+          <option>3 adultes</option>
+          <option>4 adultes</option>
+          <option>5 adultes</option>
+        </select>
+        
+  
+        <label for="enfants">Billets enfants</label>
+        <select name="enfants" id="enfants">
+          <option selected="selected">0 enfant</option>
+          <option>1 enfant</option>
+          <option >2 enfants</option>
+          <option>3 enfants</option>
+          <option>4 enfants</option>
+          <option>5 enfants</option>
+        </select>
+  
+        <label for="categroie">Catégorie</label>
+        <select name="type" id="type">
+          <option selected="selected">Classe Economique</option>
+          <option>Classe Business</option>
+        </select>
+      </div> 
+
+      <div class="validate">
+        <input type="submit" value="Lancer la recherche" name="recherche" id="recherche">
+      </div>     
+    </form>
+  </header>
+
+  <section class="explore">
+    <ul class="cards">  
+
+      <div class="cards-flex">
+        <li class="barcelone card"><span class="city">Barcelone</span><span class="price">Dés 80 €</span></li>
+        <li class="dubai card"><span class="city">Dubai</span><span class="price">Dés 300 €</span></li>
+        <li class="philippines card"><span class="city">Philippines</span><span class="price">Dés 1200 €</span></li>
+      </div>
+
+      <div class="cards-flex">
+        <li class="tunis card"><span class="city">Tunis</span><span class="price">Dés 90 €</span></li>
+        <li class="paris card"><span class="city">Paris</span><span class="price">Dés 55 €</span></li>
+        <li class="londres card"><span class="city">Londres</span><span class="price">Dés 65 €</span></li>   
+      </div>
+
+      
+         
+    </ul>
+  </section>
+
+</body>
+</html>

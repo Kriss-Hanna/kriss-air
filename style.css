@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
+
+*{
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Merienda One', cursive;
+}
+
+
+body {
+  background: #DBDBD9;
+}
+
+header{
+  background: url(./images/header-section.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 50vh;  
+  color: whitesmoke;
+}
+
+header h1 {
+  font-size: 5rem;
+}
+
+header h3{
+  font-style: italic;
+  font-size: 0.90rem;
+  opacity: 0.8;
+}
+
+
+
+.cards-flex{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.card {
+  height: 20em;
+  width: 20em;
+  color: white;
+  list-style-type: none;
+  height: 52vh;
+  margin: 0.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  transition: all 0.27s ease;
+  opacity: 0.7;
+}
+
+.city{
+  position: absolute;
+  top: 1.45em;
+  right: 1.35em;
+  background: whitesmoke;
+  color: black;
+  font-size: 1.45rem;
+  padding: 0.2em;
+}
+
+.price {
+  position: absolute;
+  bottom: 1.25em;
+  left: 0;
+  background: orange;
+  padding: 1em;
+  font-size: 1.25rem;
+}
+
+
+.barcelone{background: url(./images/barcelone.jpg); background-repeat: no-repeat;}
+.dubai{background: url(./images//dubai.jpg); background-repeat: no-repeat;}
+.philippines{background: url(./images/philippines.jpg); background-repeat: no-repeat;}
+.tunis{ background: url(./images/tunis.jpg); background-repeat: no-repeat;}
+.paris{ background: url(./images/paris.jpg); background-repeat: no-repeat;}
+.londres{background: url(./images/londres.jpg); background-repeat: no-repeat;}
+
+/***** formulaire ***/
+
+form{
+  padding: .75em;
+}
+
+.form-group{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.form-group input, label{
+  margin: 0.75em;
+}
+
+.form-group input, select, option{
+  border: none;
+  padding: 5px;
+  background-color: bisque;
+  color: gray;
+  border-radius: 5px;
+}
+
+.validate{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 2em;
+
+}
+
+.validate input{
+  border-radius: 10px;
+  font-size: 1.2rem;
+  padding: 0.5em;
+  cursor: pointer;
+  background-color: bisque;
+  color: gray;
+}
+
+.validate input:hover{
+  color: bisque;
+  background-color: gray;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.1);
+
+}
